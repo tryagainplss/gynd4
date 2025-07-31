@@ -1,0 +1,209 @@
+SNOWFLAKE WORKSHOP: ADVANCED DATA ENGINEERING FOR TELCO
+3-Hour Virtual Workshop for Telco Data Team
+==================================================
+
+WORKSHOP OVERVIEW
+-----------------
+• Duration: 3 hours (180 minutes)
+• Participants: 30 telco data engineers/analysts (junior to senior)
+• Prerequisites: Basic SQL knowledge, new to Snowflake
+• Platform: Snowflake trial account
+• Format: Virtual workshop with hands-on exercises
+
+WORKSHOP GOALS
+--------------
+• Explain and implement Snowflake Views to optimize query performance
+• Use Time Travel and Fail-safe to recover data and audit changes
+• Build a simple CDC pipeline via Streams, Tasks & Snowpipe
+
+SLIDE 1: WORKSHOP AGENDA
+------------------------
+• Welcome and Setup (15 minutes)
+• Module 1: Views & Performance Optimization (60 minutes)
+• Module 2: Time Travel & Fail-safe (60 minutes)
+• Module 3: CDC with Streams, Tasks & Snowpipe (60 minutes)
+• Q&A and Wrap-up (15 minutes)
+
+SLIDE 2: WORKSHOP PREREQUISITES
+-------------------------------
+• Snowflake trial account activated
+• Basic SQL knowledge (SELECT, INSERT, UPDATE, DELETE)
+• Familiarity with data warehousing concepts
+• Web browser with Snowflake web interface access
+
+SLIDE 3: MODULE 1: VIEWS & PERFORMANCE OPTIMIZATION
+---------------------------------------------------
+Learning Objective:
+• Understand how Snowflake Views can improve query performance and data access patterns
+
+Key Concepts:
+• Types of Views: Regular Views vs Materialized Views
+• Query optimization through view caching
+• Security and access control through views
+• Performance monitoring and optimization techniques
+
+Hands-on Exercise Teaser:
+• Create views for call detail records and network performance data
+• Compare query performance with and without views
+• Implement role-based access control through views
+
+Estimated Time: 60 minutes
+
+SLIDE 4: VIEWS FUNDAMENTALS
+---------------------------
+• Regular Views: Virtual tables based on SELECT statements
+• Materialized Views: Pre-computed results stored physically
+• Benefits: Query simplification, security, performance
+• Use Cases: Data abstraction, access control, performance optimization
+
+SLIDE 5: TELCO VIEWS USE CASES
+------------------------------
+• Call Detail Records (CDR) aggregation views
+• Network performance monitoring views
+• Subscriber data access views
+• Billing and revenue analysis views
+
+SLIDE 6: PERFORMANCE OPTIMIZATION TECHNIQUES
+-------------------------------------------
+• Query result caching (24-hour default)
+• Warehouse sizing and scaling
+• Query optimization through proper view design
+• Monitoring query performance with EXPLAIN PLAN
+
+SLIDE 7: MODULE 1 HANDS-ON EXERCISE OVERVIEW
+--------------------------------------------
+• Exercise 1: Create basic views for CDR data (15 min)
+• Exercise 2: Implement materialized views for network metrics (20 min)
+• Exercise 3: Role-based access control with views (15 min)
+• Exercise 4: Performance comparison and optimization (10 min)
+
+SLIDE 8: MODULE 2: TIME TRAVEL & FAIL-SAFE
+------------------------------------------
+Learning Objective:
+• Implement data recovery and audit capabilities using Snowflake's Time Travel and Fail-safe features
+
+Key Concepts:
+• Time Travel: Point-in-time data recovery (up to 90 days)
+• Fail-safe: 7-day emergency backup after Time Travel expires
+• Data retention policies and configuration
+• Audit trail and compliance requirements
+
+Hands-on Exercise Teaser:
+• Simulate data corruption and recovery scenarios
+• Implement audit trails for subscriber data changes
+• Configure retention policies for telco compliance
+
+Estimated Time: 60 minutes
+
+SLIDE 9: TIME TRAVEL MECHANICS
+------------------------------
+• Automatic data versioning for all tables
+• Query historical data using AT/AS OF clauses
+• Restore tables to previous points in time
+• Clone historical data for analysis
+
+SLIDE 10: FAIL-SAFE PROTECTION
+------------------------------
+• 7-day emergency backup after Time Travel expires
+• Automatic protection against data loss
+• Contact Snowflake support for Fail-safe recovery
+• No additional cost for Fail-safe storage
+
+SLIDE 11: TELCO COMPLIANCE SCENARIOS
+-----------------------------------
+• Regulatory data retention requirements
+• Audit trails for subscriber data changes
+• Network performance data historical analysis
+• Billing dispute resolution and data recovery
+
+SLIDE 12: MODULE 2 HANDS-ON EXERCISE OVERVIEW
+---------------------------------------------
+• Exercise 1: Basic Time Travel queries (15 min)
+• Exercise 2: Data recovery simulation (20 min)
+• Exercise 3: Audit trail implementation (15 min)
+• Exercise 4: Retention policy configuration (10 min)
+
+SLIDE 13: MODULE 3: CDC WITH STREAMS, TASKS & SNOWPIPE
+------------------------------------------------------
+Learning Objective:
+• Build end-to-end Change Data Capture (CDC) pipelines using Snowflake's streaming capabilities
+
+Key Concepts:
+• Streams: Change tracking mechanism for tables
+• Tasks: Scheduled SQL execution for data processing
+• Snowpipe: Continuous data loading from external sources
+• CDC pipeline architecture and best practices
+
+Hands-on Exercise Teaser:
+• Create a real-time CDR processing pipeline
+• Implement automated data quality checks
+• Build a subscriber data synchronization system
+
+Estimated Time: 60 minutes
+
+SLIDE 14: STREAMS FUNDAMENTALS
+------------------------------
+• Change Data Capture (CDC) for tables
+• INSERT, UPDATE, DELETE change tracking
+• Stream consumption and offset management
+• Change data querying and processing
+
+SLIDE 15: TASKS AUTOMATION
+--------------------------
+• Scheduled SQL execution
+• DAG (Directed Acyclic Graph) workflows
+• Error handling and retry logic
+• Resource management and cost optimization
+
+SLIDE 16: SNOWPIPE CONTINUOUS LOADING
+------------------------------------
+• Real-time data ingestion from cloud storage
+• Auto-ingestion triggers and notifications
+• Data transformation during loading
+• Error handling and dead letter queues
+
+SLIDE 17: TELCO CDC USE CASES
+-----------------------------
+• Real-time CDR processing and analytics
+• Network performance monitoring
+• Subscriber data synchronization
+• Billing system integration
+
+SLIDE 18: MODULE 3 HANDS-ON EXERCISE OVERVIEW
+---------------------------------------------
+• Exercise 1: Create streams for CDR table (15 min)
+• Exercise 2: Build automated processing tasks (20 min)
+• Exercise 3: Implement Snowpipe for external data (15 min)
+• Exercise 4: End-to-end CDC pipeline (10 min)
+
+SLIDE 19: WORKSHOP SUMMARY
+--------------------------
+• Views: Performance optimization and access control
+• Time Travel & Fail-safe: Data recovery and compliance
+• CDC Pipeline: Real-time data processing automation
+• Next Steps: Advanced Snowflake features and best practices
+
+SLIDE 20: NEXT STEPS & RESOURCES
+--------------------------------
+• Snowflake documentation and tutorials
+• Advanced topics: Clustering, partitioning, optimization
+• Community forums and support channels
+• Certification paths and training programs
+• Q&A session and feedback collection
+
+WORKSHOP TIMING BREAKDOWN
+-------------------------
+• Welcome and Setup: 15 minutes
+• Module 1 (Views & Performance): 60 minutes
+• Module 2 (Time Travel & Fail-safe): 60 minutes
+• Module 3 (CDC Pipeline): 60 minutes
+• Q&A and Wrap-up: 15 minutes
+• Total: 180 minutes (3 hours)
+
+SUCCESS METRICS
+---------------
+• Participants can create and optimize views for performance
+• Participants can implement Time Travel for data recovery
+• Participants can build a working CDC pipeline
+• All exercises complete successfully on trial accounts
+• Positive feedback on workshop content and delivery
